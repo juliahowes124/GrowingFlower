@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="mystyles.css">
+        <title>Growing Tree</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body class="night">
+        <div class="button moon">
+        </div>
+        <div class="box">
+            <div class="stem">
+                <div class="flower">
+                    <div class="center">
+                        
+                    </div>
+                </div>
+                <div class="leaf leaf1">
+                </div>
+                <div class="leaf leaf2">
+                </div>
+            </div>
+            <div class="pot">
+                <div class="pot-top shadow">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(".button").click(function() {
+            $(".button").addClass("sun");
+            $(".button").removeClass("moon");
+            $("body").addClass("day");
+            $("body").removeClass("night");
+            $(".stem").addClass("grow");
+            $(".flower").addClass("bloom");
+            $(".leaf").addClass("grow-leaves");
+            // setTimeout(function () { 
+            //     $('.button').addClass("moon")
+            //     $('.button').removeClass('sun');
+            //     $("body").addClass("night");
+            //     $("body").removeClass("day");
+            //     $(".stem").removeClass("grow");
+            // }, 3000);  
+        });
+    </script>
+</html>
+

@@ -1,0 +1,161 @@
+.night {
+    background-color: darkblue;
+}
+.day {
+    background-color: lightblue;
+}
+
+.shadow {
+    box-shadow: 0 16px 80px rgba(0,0,0,0.3);
+}
+
+.moon {
+    background-color: rgb(226, 226, 223);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
+}
+
+.sun {
+    background-color:yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:checked {
+    background-color: black;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    top: 40%;
+    position: fixed;
+}
+
+
+
+.pot {
+    width: 25%;
+    height: 100px;
+    margin: 50% 0 0 40%;
+    border-top: 100px solid brown;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+.pot-top {
+    width: 150%;
+    transform: translate(-25px, -110px);
+    background-color: brown;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.stem {
+    background-color: green;
+    width: 10px;
+    height: 0px;
+    position: absolute;
+    left: 220px;
+    bottom: 200px;
+}
+
+.grow {
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.flower {
+    width: 0px;
+    height: 0px;
+    background-color: rgb(255, 187, 0);
+    transform: translate(-40%, 0);
+    border-radius: 50%;
+}
+
+
+.bloom {
+    animation-name: bloom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.leaf {
+    width: 700%;
+    height: 15%;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.grow-leaves {
+    animation-name: grow-leaves;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.leaf1 {
+    transform: translate(-80%, 50px) rotate(45deg);
+}
+.leaf2 {
+    transform: translate(2%, 50px) rotate(-35deg);
+}
+
+@keyframes grow {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 200px;
+        width: 10px;
+    }
+}
+
+@keyframes bloom {
+    0% {
+        height: 0px;
+        width: 0px;
+    }
+    10% {
+        height: 0px;
+        width: 0px;
+    }
+    100% {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@keyframes grow-leaves {
+    0% {
+        height: 0px;
+        width: 0px;
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        height: 15px;
+        width: 70px;
+        visibility: visible;
+    }
+}
