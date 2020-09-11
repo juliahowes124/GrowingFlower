@@ -11,14 +11,17 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body class="night">
+        <div class="cloud">
+        </div>
         <div class="button moon">
         </div>
         <div class="box">
             <div class="stem">
                 <div class="flower">
-                    <div class="center">
-                        
-                    </div>
+                    <div class="flower_center"></div>
+                    <div class="flower_pedal pedal_one"></div>
+                    <div class="flower_pedal pedal_two"></div>
+                    <div class="flower_pedal pedal_three"></div>
                 </div>
                 <div class="leaf leaf1">
                 </div>
@@ -38,8 +41,10 @@
             $("body").addClass("day");
             $("body").removeClass("night");
             $(".stem").addClass("grow");
-            $(".flower").addClass("bloom");
+            $(".flower_pedal").addClass("bloom");
+            $(".flower_center").addClass("bloom_center");
             $(".leaf").addClass("grow-leaves");
+            $(".cloud").addClass("show_clouds");
             // setTimeout(function () { 
             //     $('.button').addClass("moon")
             //     $('.button').removeClass('sun');
