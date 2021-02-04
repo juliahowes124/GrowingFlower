@@ -141,32 +141,6 @@
     top: -2%;
 }
 
-  /* .flower__eye {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    z-index: 2;
-    background: #fff;
-    border-radius: 50%;
-  }
-  .flower__eye.left {
-    left: 30%;
-  }
-  .flower__eye.right {
-      left: 10%;
-  }
-  .flower__eye span {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    margin-top: 5px;
-    background: black;
-    border-radius: 50%;
-  } */
-
-
-
 .bloom {
     animation-name: bloom;
     animation-duration: 5s;
